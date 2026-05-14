@@ -95,6 +95,7 @@ public class TodoService {
         }
         todoRepository.deleteById(id);
         log.info("operation=todo.deleted todoId={}", id);
+        System.out.println("prueba");
     }
 
     private TodoResponse toResponse(Todo todo) {
